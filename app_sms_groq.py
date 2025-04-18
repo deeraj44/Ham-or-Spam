@@ -14,7 +14,7 @@ def load_model():
 model = load_model()
 
 # ---- Groq API Config ----
-GROQ_API_KEY = "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"
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 HEADERS = {
     "Authorization": f"Bearer {GROQ_API_KEY}",
